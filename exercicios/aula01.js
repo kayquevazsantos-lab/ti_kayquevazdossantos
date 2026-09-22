@@ -1,4 +1,4 @@
- Aula 01 - Um botao que lembra
+
 // Responda abaixo. Mantenha os marcadores e nao apague os enunciados.
 // ex1
 // Escreva a linha que cria uma variavel chamada visto guardando o valor falso.
@@ -46,7 +46,3 @@
 
 //O que mudar: Na declaração do estado desse cartão específico, inicializaria a variável como `let apoiado = true;`.
 // Por que não serve para os outros: Os demais cartões começam não apoiados (`false`). Se inicializarmos todos com `true`, no primeiro clique o código entenderá que o usuário está removendo o apoio de um cartão que nunca recebeu um.
-
-git add.
-git commit -m"aula 01"
-git push 
