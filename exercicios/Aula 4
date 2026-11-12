@@ -1,0 +1,26 @@
+1. O texto do link deve descrever o destino porque quem usa leitor de tela costuma navegar por
+uma lista só de links, fora do contexto. “Clique aqui” repetido seis vezes não diz para onde cada
+um vai; “Escolas”, “Alunos” etc. diz. O mais prejudicado é quem depende do leitor de tela, mas
+todo mundo ganha com links claros. Aceitar qualquer resposta que ligue o “clique aqui” à falta
+de contexto.
+2. Os dois ficam em negrito no visual, mas <b> é só aparência (“deixa grosso”) e <strong> carrega
+significado (“isto é importante”). A diferença aparece no leitor de tela, que dá ênfase na voz num
+strong e não num b. O ponto da questão é separar aparência de significado: no HTML a gente
+marca o que a coisa é, e deixa o como aparece para o CSS.
+3. O erro é usar <br> empilhado para criar espaço. Espaço entre blocos é trabalho do CSS
+(margin). O <br> só se justifica se a quebra fizer parte do texto. Correção esperada:
+<p>Radar de Evasao<br>NRE Cascavel</p>
+E, se quiser afastar esse parágrafo do que vem depois, isso vai no CSS, por exemplo margin-bottom.
+Aceitar resposta que mantenha um <br> entre os nomes e tire os extras.
+4. Esperado:
+<a href="https://www.apoio.exemplo.org"
+target="_blank" rel="noopener">Canal de apoio</a>
+Erros comuns: esquecer o rel="noopener" (a trava que anda junto com o _blank), ou usar _blank
+num link interno sem motivo. Aceitar rel="noopener noreferrer" tambem.
+5. Não existe resposta única. Confira no navegador, não só no arquivo. Problemas comuns:
+esquecer o list-style: none (aparecem as bolinhas), esquecer o text-decoration: none (os
+links ficam sublinhados), ou aplicar a classe ativo em mais de um item. Peça para o aluno mostrar
+a barra funcionando e apertar Tab para ver o foco aparecer nos links.
+6. Não existe resposta única. O que se avalia é se os valores vieram certos do Figma (seção 3) e
+se foram usados via var(–nome), não colados crus de novo no meio do CSS. Se o aluno escreveu
+color: #2D2A6E direto em vez de color: var(–bg-primary), é a hora de lembrar o ganho da
